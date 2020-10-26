@@ -7,7 +7,7 @@ if(gpa<2.0):
   else:
     print("gpa is not wnough")
 else:
-  if number<47:
-    print("Number of lectures are not enough")
+  02if number<47:
+01    print("Number of lectures are not enough")
   else:
     print("You can graduate :)")
