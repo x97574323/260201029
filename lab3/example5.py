@@ -6,4 +6,11 @@ def factorialof(n):
   else:
     return (n*factorialof(n-1))
 
-print(factorialof(number))
+counter=0
+
+num=factorialof(number)
+while((num%5==0)):
+  counter=counter+1
+  num=num//5
+print(counter)
+
