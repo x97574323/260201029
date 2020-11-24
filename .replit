@@ -1,2 +1,2 @@
 language = "bash"
-run = "python kendi_kodlarım/hangman/hangman.py"
+run = "python kendi_kodlarım/subsets/subset.py"
