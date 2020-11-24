@@ -3,7 +3,7 @@ from selenium import webdriver
 import time
 import random
 
-#iyte mailin ter
+#iyte mailin terminale karsı yapılan görsel erisimli bottur.
 
  
 PATH = "chromedriver.exe"
