@@ -1,43 +1,42 @@
 # part 2
+import numpy as ny 
 
 number=20
 counter=0
+counter2=19
+
+
+array_gn=ny.full((20,20),2)
 while(counter<number):
-  local_counter=0
-  local=["x"]*number
-  while(local_counter<number):
-    if(local_counter==counter):
-      local[local_counter]=10  
-      local_counter=local_counter+1
-    else:
-      local[local_counter]=2
-      local_counter=local_counter+1
-  counter=counter+1
-  local[-1*counter]=20
-  print(local)
-
-
-
+    array_gn[counter][counter]=10
+    array_gn[counter][counter2]=20
+    counter=counter+1
+    counter2=counter2-1
+print((array_gn))
 
 
 
 
 
 # part 3
+import numpy as ny
 
-counter=0
-general=[]
+numberx=10
+counterx=0
 
-while(counter<10):
-  matrix1=[4,2,4,2,4,2,4,2,4,2]
-  if(counter%2==0):
-    general.append(matrix1)
-  else:
-    general.append(list(reversed(matrix1)))
-  counter=counter+1
-for i in general:
-  print(i)
 
+arrayx=ny.full((10,10),2)
+while(counterx<numberx):
+    if(counterx%2==0):
+        lister=[1,3,5,7,9]
+        for i in lister:
+            arrayx[counterx][lister]=4
+    else:
+        lister2=[0,2,4,6,8]
+        for i in lister2:
+            arrayx[counterx][i]=4
+    counterx=counterx+1
+print(arrayx) 
 
 
 
@@ -60,16 +59,16 @@ lister=[patient1,patient2,patient3,patient4,patient5,patient6,patient7,patient8,
 counter=0
 
 for i in lister:
-  if(reference==i):
-    globals()["{}".format(counter)] =["patient",counter,"No canser risk"]
-    print(globals()["{}".format(counter)])
-    counter=counter+1
-  else:
+    if(reference==i):
+        globals()["{}".format(counter)] =["patient",counter,"No canser risk"]
+        print(globals()["{}".format(counter)])
+        counter=counter+1
+    else:
       
-    globals()["{}".format(counter)] =["patient",counter,"Canser risk"]
-    print(globals()["{}".format(counter)])
-    counter=counter+1
+        globals()["{}".format(counter)] =["patient",counter,"Canser risk"]
+        print(globals()["{}".format(counter)])
+        counter=counter+1
 
     
-
+    
 

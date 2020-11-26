@@ -1,2 +1,2 @@
 language = "bash"
-run = "python kendi_kodlarım/array.py"
+run = "python kendi_kodlarım/dna.py"
