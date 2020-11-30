@@ -1,2 +1,2 @@
 language = "bash"
-run = "python kendi_kodlarım/atomik isaretleyici.py"
+run = "python lab6/example1.py"
