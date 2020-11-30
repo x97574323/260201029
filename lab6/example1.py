@@ -1,7 +1,4 @@
-members=[("Jon",15),("Ned",45),("Arya",9),("catelyn",44),("Bran",10)]
-mem=dict()
+members=dict({("Jon",15),("Ned",45),("Arya",9),("catelyn",44),("Bran",10)})
 for i in members:
-  mem[i[0]]=i[1]
-for i in mem:
-  if(mem[i]<18):
+  if(members[i]<18):
     print(i)
