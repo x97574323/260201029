@@ -1,2 +1,2 @@
 language = "bash"
-run = "python lab6/example3.py"
+run = "python ödev/grader.py"
