@@ -1,19 +1,9 @@
-students=int(input("Pls input the number of students:"))
-avg=list()
-while students>0:
-  grade1=float(input("Pls input grade 1:"))
-  grade2=float(input("Pls input grade 2:"))
-  grade3=float(input("Pls input grade 3:"))
-  avg_note=(grade1*30+grade2*30+grade3*40)/100
-  avg.append(avg_note)
-  students=students-1
-for  i in avg:
-  print("avg grade of {}. student is {} ".format(avg.index(i)+1,i))
-
-
-#seconde example for aa students
-
-aa_students=list()
-for k in avg:
-  if k>=90:
-    aa_students.append(k)
+number=int(input("Pls input your number:"))
+number1=number
+even=list()
+while(number1>0):
+  numof=int(input("pls input number:"))
+  if(numof%2==0):
+    even.append(numof)
+  number1=number1-1
+print((len(even)/number)*100)
