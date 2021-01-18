@@ -94,7 +94,7 @@ print("Okay we start to compare the outputs...")
 print("-" * 100)
 correct_outputs = read_text_file(outputs_filename)
 with open(inputs_filename) as inputs:
-    submission_outputs = subprocess.run(["python3", submission_filename], stdin=inputs, stdout=subprocess.PIPE).stdout.decode("utf-8")
+    submission_outputs = subprocess.run(["python", submission_filename], stdin=inputs, stdout=subprocess.PIPE).stdout.decode("utf-8")
     # TODO: use the named argument: timeout
 
     submission_lines = submission_outputs.splitlines()
